@@ -13,9 +13,7 @@
     <div class="top">
         <div class="logo">&#127968;Stone2Wall.com</div>
         <p>
-            <a href="index.html" class="back">
-                <div class="btnright">Back</div>
-            </a>
+            <a href="login.html" class="back">Login</a>
         </p>
     </div>
 
@@ -96,23 +94,22 @@
                 <label for="fname">Full Name</label><br>
                 <input type="text" name="fname" id="fname" required><br>
                 <label for="mno">Mobile Number</label><br>
-                <input type="tel" name="mno" id="mno" pattern="[789][0-9]{9}" required><br>
+                <input type="tel" name="mno" id="mno" pattern="[6789][0-9]{9}" required><br>
                 <label for="address">Full Address</label><br>
                 <textarea name="address" id="adrs" cols="30" rows="5" required></textarea><br>
-                <label for="products">Select Products required:</label><br>
-                <input type="checkbox" name="Paint" id="paint" value="Paint">
-                <label for="Paint">Paint</label>
-                <input type="checkbox" name="Rods" id="rods" value="Rods">
-                <label for="Rods">TMT Rod</label>
-                <input type="checkbox" name="Bricks" id="brick" value="Bricks">
-                <label for="Rods">Bricks</label>
-                <input type="checkbox" name="Cement" id="cement" value="Cement">
-                <label for="Rods">Cement</label>
-                <input type="checkbox" name="pipe" id="pipe" value="pipe">
-                <label for="Rods">Pipe Fittings</label><br>
+                <label for="products">Select Products required:(Press Ctrl or Cmd key for selecting multiple options)</label><br>
+                <select name="products" id="products" size="5" multiple>
+                    <option value="paint">Paint</option>
+                    <option value="paint">TMT Rods</option>
+                    <option value="paint">Bricks</option>
+                    <option value="paint">Cements</option>
+                    <option value="paint">Pipe Fittings</option>
+                </select><br>
                 <label for="pids">Enter the Product IDs</label>
-                <input type="text" name="pids" id="pids">
-
+                <input type="text" name="pids" id="pids"><br>
+                <label for="modp">Mode of Payment</label>
+                <input type="radio" name="modp" id="modp" value="cod"> COD
+                <input type="radio" name="modp" id="modp" value="online"> Online
                 <button type="submit"><a href="#">
                     <div class="purchase">Purchase</div>
                 </a>
