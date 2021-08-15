@@ -1,0 +1,164 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    background: rgb(80, 79, 79);
+}
+
+div {
+    display: block;
+}
+
+.bgimg {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    background-image: url('https://brick2wall.com/assets/images/landing_images/bg-landing.png');
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+.phone {
+    position: absolute;
+    right: 3%;
+    top: 6%;
+    color: #f9760b;
+    font-size: 30px;
+}
+
+a {
+    outline: 0 !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.caption {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    top: 18vh;
+}
+
+.caption h4 {
+    color: white;
+    font-size: 46px;
+    padding: 0px 10px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.caption p {
+    color: #f9760b;
+    font-size: 32px;
+    font-weight: 100;
+    margin: 10px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    background: url('https://brick2wall.com/assets/images/landing_images/bg-icons.png');
+    background-size: 100% 100%;
+    height: 40%;
+}
+
+.bleft {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+
+.bleft p {
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px 45px;
+    margin: auto;
+}
+
+.textright {
+    text-align: center;
+}
+
+.btn-right {
+    float: right;
+    margin: -20px 250px;
+    background: transparent;
+    color: #f9760b;
+    padding: 0px 0px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: 500;
+    z-index: 99;
+    position: relative;
+    text-decoration: none;
+    border: 0px solid black;
+    text-align: center;
+}
+
+.bright {
+    position: relative;
+    min-height: 1px;
+    /* padding-right: 100px; */
+    padding-left: 600px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+
+.bright p {
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px 50px;
+    margin: auto;
+}
+
+.textleft {
+    text-align: center;
+}
+
+.btn-left {
+    float: left;
+    margin: -20px 250px;
+    background: transparent;
+    color: #f9760b;
+    padding: 0px 0px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: 500;
+    z-index: 99;
+    position: relative;
+    text-decoration: none;
+    border: 0px solid black;
+    text-align: center;
+}

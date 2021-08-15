@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>Shop Now</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">&#127968;Stone2Wall.com</div>
+        <p>
+            <a href="index.html" class="back">
+                <div class="btnright">Back</div>
+            </a>
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>List of Items</h2>
+            <table>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>P01</td>
+                    <td>Asian Paint</td>
+                    <td>2000</td>
+                    <td rowspan="2">Paint</td>
+                </tr>
+                <tr>
+                    <td>P02</td>
+                    <td>Nippon Paint</td>
+                    <td>2500</td>
+                </tr>
+
+                <tr>
+                    <td>S01</td>
+                    <td>Tata Steel</td>
+                    <td>1000</td>
+                    <td rowspan="2">TMT Rods</td>
+                </tr>
+                <tr>
+                    <td>S02</td>
+                    <td>Agni Steel</td>
+                    <td>2500</td>
+                </tr>
+
+                <tr>
+                    <td>B01</td>
+                    <td>Birla Bricks</td>
+                    <td>500</td>
+                    <td rowspan="2">Bricks</td>
+                </tr>
+                <tr>
+                    <td>B02</td>
+                    <td>BT Bricks</td>
+                    <td>250</td>
+                </tr>
+
+                <tr>
+                    <td>C01</td>
+                    <td>India Cements</td>
+                    <td>2500</td>
+                    <td rowspan="2">Cement</td>
+                </tr>
+                <tr>
+                    <td>C02</td>
+                    <td>UltraTech</td>
+                    <td>3500</td>
+                </tr>
+
+                <tr>
+                    <td>F01</td>
+                    <td>Jaguar Pipes</td>
+                    <td>2500</td>
+                    <td rowspan="2">Pipe Fittings</td>
+                </tr>
+                <tr>
+                    <td>F02</td>
+                    <td>Apollo Pipes</td>
+                    <td>3500</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column-r">
+            <h2>Purchase Products</h2>
+            <form action="" method="get">
+                <label for="fname">Full Name</label><br>
+                <input type="text" name="fname" id="fname" required><br>
+                <label for="mno">Mobile Number</label><br>
+                <input type="tel" name="mno" id="mno" pattern="[789][0-9]{9}" required><br>
+                <label for="address">Full Address</label><br>
+                <textarea name="address" id="adrs" cols="30" rows="5" required></textarea><br>
+                <label for="products">Select Products required:</label><br>
+                <input type="checkbox" name="Paint" id="paint" value="Paint">
+                <label for="Paint">Paint</label>
+                <input type="checkbox" name="Rods" id="rods" value="Rods">
+                <label for="Rods">TMT Rod</label>
+                <input type="checkbox" name="Bricks" id="brick" value="Bricks">
+                <label for="Rods">Bricks</label>
+                <input type="checkbox" name="Cement" id="cement" value="Cement">
+                <label for="Rods">Cement</label>
+                <input type="checkbox" name="pipe" id="pipe" value="pipe">
+                <label for="Rods">Pipe Fittings</label><br>
+                <label for="pids">Enter the Product IDs</label>
+                <input type="text" name="pids" id="pids">
+
+                <button type="submit"><a href="#">
+                    <div class="purchase">Purchase</div>
+                </a>
+            </button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
