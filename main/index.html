@@ -5,40 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Stone2Wall.com</title>
 </head>
 
 <body>
-    <div class="top">
-        <div class="bgimg">
-            <div class="logo">&#127968;Stone2Wall.com</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <div class="nav-cont">&#127968;Stone2Wall.com</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-cont" href="tel:+91-1234567890">+91-1234567890 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link nav-cont" href="shop.html">Shop Now</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link nav-cont" href="about.html">About Us</a>
+                </li>
+            </ul>
         </div>
-        <p>
-            <a href="tel:+91-1234567890" class="phone">+91-1234567890</a>
-        </p>
-    </div>
-    <div class="caption">
-        <h4>Infusing Technology in<br> Construction Material Supply Chain</h4>
-        <p>
-            <b>B2B | Channel Finance | E-Commerce</b>
-        </p>
-    </div>
-    <div class="bottom">
-        <div class="bleft">
-            <p class="textright">Retail <br> Customers</p>
-            <a href="shop.html" class="btn-right">
-                Shop Now
-            </a>
-        </div>
-    </div>
-    <div class="line"><img src="https://brick2wall.com/assets/images/landing_images/lines.png" alt=""></div>
-    <div class="bottom">
-        <div class="bright">
-            <p class="textleft">Infrastructure / <br> Industrial Clients</p>
-            <a href="about.html" class="btn-left">
-                Know More
-            </a>
+    </nav>
+
+    <!-- Content -->
+    <div class="page-holder bg-cover">
+        <div class="container py-5">
+
+            <!-- Header Content -->
+            <header class="text-center py-5">
+                <h2 class="caption display-4 font-weight-bold mb-4">
+                    Infusing Technology in<br> Construction Material Supply Chain
+                </h2>
+                <p class="lead caption-cont">
+                    <strong>B2B | Channel Finance | E-Commerce</strong>
+                </p>
+            </header>
+            <div class="container-fluid">
+
+                <!-- Additional Content -->
+                <div class="row">
+                    <div class="col">
+                        <h4 class="display-4 text-white text-center">Retail <br> Customers</h4>
+                        <p class="text-center"><a href="shop.html"><button type="button" class="btn btn-outline-warning btn-color"><strong>Shop Now</strong></button></a></p>
+                    </div>
+                    <div class="col">
+                        <h4 class="display-4 text-white text-center">Infrastructure / <br> Industrial Clients</h4>
+                        <p class="text-center"><a href="about.html"><button type="button" class="btn btn-outline-warning btn-color"><strong> Know More </strong></button></a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
