@@ -5,61 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="about.css">
     <title>About Us</title>
 </head>
 
 <body>
-    <div class="top">
-        <div class="logo">&#127968;Stone2Wall.com</div>
-        <p>
-            <a href="index.html" class="back">
-                <div class="btnright">Back</div>
-            </a>
-        </p>
-    </div>
-    <div class="abus">
-        <h1>About Us</h1>
-        <p>Stone2wall Infra is a breakthrough platform that infuses technology in the construction material supply chain to drive procurement and operational efficiency. It introduces systemic intelligence that allows infrastructure contractors to select
-            from multiple product options curated using its proprietary algorithm, while enjoying scale benefits from aggregated demand. The platform unifies multiple stakeholders to offer greater supply chain control and employs proprietary credit appraisal
-            process to offer efficient trade finance solutions.</p>
-    </div>
-    <h2 style="text-align: center;">Our Partners</h2>
-    <div class="row">
-        <div class="column">
-            <ul>
-                <h3>Manufactures</h3>
-                <p>
-                    <li>Tata Steel</li>
-                    <li>Rashmi Group</li>
-                    <li>GK TMT</li>
-                    <li>Radan</li>
-                </p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <div class="nav-cont">&#127968;Stone2Wall.com</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-cont" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-cont" href="#performance">Performance</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link nav-cont" href="#products">Products</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link nav-cont" href="#clients">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-cont" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-cont" href="shop.html"><button type="button" class="btn btn-sm btn-outline-warning">Shop</button></a>
+                </li>
             </ul>
         </div>
-        <div class="column">
-            <ul>
-                <h3>3PL Companies</h3>
-                <p>
-                    <li>Blackbuck</li>
-                    <li>STS</li>
-                    <li>Darcel</li>
-                    <li>Shreejee</li>
-                </p>
-            </ul>
-        </div>
-        <div class="column">
-            <ul>
-                <h3>Financial Partners</h3>
-                <p>
-                    <li>J&K Bank</li>
-                    <li>DCB</li>
-                    <li>Kotak Bank</li>
-                    <li>Fincorp</li>
-                </p>
-            </ul>
+    </nav>
+
+
+    <!--Background Video  -->
+    <div class="video-background-holder mb-5">
+        <div class="video-background-overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="https://infra.brick2wall.com/images/banner.mp4" type="video/mp4">
+          </video>
+        <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3"><strong> Stone2Wall Infra</strong></h1>
+                    <p class="lead mb-0 text-orange"><strong> Sourcing | Supply Chain | Finance </strong></p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <!-- About Us -->
+    <div class="container" id="aboutus">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-sm  img-holder mt-5"><img src="https://infra.brick2wall.com/images/map.png" alt="map" class="img-fluid"></div>
+            <div class="col-sm">
+                <h1 class="text-orange mt-5">About Us</h1>
+                <p><strong> Stone2Wall Infra</strong> is a breakthrough platform that infuses technology in the construction material supply chain to drive procurement and operational efficiency. It introduces systemic intelligence that allows infrastructure
+                    contractors to select from multiple product options curated using its proprietary algorithm, while enjoying scale benefits from aggregated demand. The platform unifies multiple stakeholders to offer greater supply chain control and
+                    employs proprietary credit appraisal process to offer efficient trade finance solutions.
+                    <br> Infrastructure firms, by virtue of their cash flow cycle and limited liquidity from traditional FIs, need to engage distributors and/or trade-financiers to procure construction material. Distributors often specialize in a specific
+                    product-brand combination, servicing a limited geographical area. Select trade-financiers, employ lengthy processes with unfriendly business terms. This leaves infrastructure firms to engage with multiple middlemen, making their procurement
+                    process operationally taxing and financially inefficient.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance -->
+    <div class="container-fluid" id="performance">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12 mt-5">
+                <h1 class="text-orange d-flex mt-5">Performance</h1>
+            </div>
+            <div class="col-12 img-holder">
+                <img src="./Pics/stats.jpg" alt="stats" class="img-fluid mb-5">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products -->
+    <div class="container mt-5" id="products">
+        <div class="row  mt-5 justify-content-center">
+            <div class="col-sm">
+                <h1 class="text-orange mt-5">Our Products</h1>
+                <p>Stone2Wall specializes in steel, a simple appearing yet complex and critical product across Infrastructure projects. As per Ministry of steel, Infrastructure sector consumes ~12% of steel produced in India, a number which likely to triple
+                    over the next 10 years, taking sector’s steel consumption to 120 Mn MT (10x growth).
+                </p>
+                <p> High order value coupled with project cash flows, mandate the need for a middlemen. Current requirements are fulfilled by a fragmented supplier base, specializing in a specific product-brand combination & geography. Stone2Wall has supplied
+                    over 500+ SKUs fulfilling orders across 18 Indian states.
+                </p>
+                <p> By aggregating demand and forging partnerships with manufacturers, Stone2Wall has extended economies of scale benefits to its customers. Steel also aligns with the founders 50+ years of trade knowledge and network.
+                </p>
+                <p>
+                    <strong><em>Cement, concrete, construction chemicals, construction equipment are other segments, in which we will be gradually extending procurement support.</em></strong>
+                </p>
+            </div>
+            <div class="col-sm mt-5">
+                <img src="./Pics/products.jpg" alt="Products" class="img-fluid mt-5">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Clients -->
+    <div class="container mt-5" id="clients">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-sm">
+                <h1 class="text-orange mt-5">Our Clients</h1>
+                <h3>We cater to the infrastructure sector for:</h3>
+                <p>Stone2Wall Infra focuses on the $100Bn Indian Infrastructure sector. The sector contributes 9-10% to the Indian GDP and employs 12% workforce. </p>
+                <p> Infrastructure sector is an aggregation of 7 broad subsectors, vis a vis Roads, Railways, Aviation, Power, Oil & Gas, Telecom and Urban Development. Each sub-sector behaves differently in terms of its project execution, cash flows and
+                    product specifications. In the last 2 years, Stone2Wall has cultured product expertise with supply chain depth, to ensure exclusive and timely supplies.
+                </p>
+                <p>Each subsector also witnesses variable participation of Large, Medium & Small enterprises, following variable consumption behavior, procurement process and credit appetite. Stone2all has developed intelligence to ascertain consumption
+                    and procurement requirements of captive customers to offer suitable credit solutions.</p>
+            </div>
+            <div class="col-sm mt-5">
+                <img src="./Pics/clients.jpg" alt="clients" class="img-fluid mt-5">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div class="container-fluid" id="contact">
+        <div class="row mt-5">
+            <div class="col-sm mt-5">
+                <h2>Contact Us</h2>
+
+                <div class="row mb-3">
+                    <div class="col-sm br-1">
+                        <p><span class="fa fa-phone"></span><a href="tel:+911234567890">+91-1234567890</a></p>
+                    </div>
+                    <div class="col-sm br-1">
+                        <p><span class="fa fa-envelope"></span>
+                            <a href="mailto:sales@stone2wall.com">sales@stone2wall.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 p-0">
+                    <h2>Our Branches</h2>
+                </div>
+                <!-- Location -->
+                <div class="row">
+                    <div class="col-sm br-1">
+                        <p><span class="fa fa-map-marker"></span>
+                            <span><b class="text-orange">Bengaluru</b><br>
+                             2nd Floor, Wing B, AIHP Tower 249 G, Phase IV, Udyog Vihar, Sector 18, Bengaluru,
+                            <br> Karnataka 530068
+                            </span>
+                        </p>
+                        <p><span class="fa fa-map-marker"></span>
+                            <span><b class="text-orange">Chennai</b><br>
+                             3rd Floor, Prestige Polygon, 471, Anna Salai, Rathna Nagar, Teynampet, Chennai,
+                            <br> Tamil Nadu 600035
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="col-sm bg-dark mt-5 h-75">
+                <form action="#" method="POST" id="contact-form">
+                    <div class="footer-form p-1">
+                        <h3 class="text-orange text-center">Get In Touch With Us</h3>
+                    </div>
+                    <div class="row m-3 p-2">
+                        <div class="col-md-6 p-2">
+                            <input type="text" name="name" id="name" placeholder="Company Name*" required>
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <input type="text" name="contact" id="contact" placeholder="Contact Person Name*" required>
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <input type="tel" name="mobile" id="mobile" placeholder="Mobile*" pattern="[6789][0-9]{9}" required>
+                        </div>
+                        <div class="col-md-6 p-2">
+                            <input type="email" name="mail" id="mail" placeholder="E-Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div class="col pl-2">
+                            <textarea name="message" id="message" placeholder="Message" rows="3" cols="80"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center"><button type="submit" class="submit btn btn-outline-warning" id="submit">Submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
