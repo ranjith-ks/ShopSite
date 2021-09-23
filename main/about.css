@@ -1,3 +1,15 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(196, 187, 250);
+    padding-top: 70px;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
 .nav-cont {
     color: #f9760b;
 }

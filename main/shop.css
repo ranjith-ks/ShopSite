@@ -1,110 +1,22 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
-    background: rgb(196, 187, 250);
+    padding-top: 70px;
 }
 
-div {
-    display: block;
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
 }
 
-.logo {
-    margin: auto;
-    margin-top: 2%;
-    margin-left: 5%;
-    font-size: 30px;
-    color: black;
-}
-
-.back {
-    position: absolute;
-    right: 10%;
-    top: 6%;
+.nav-cont {
     color: #f9760b;
-    font-size: 30px;
 }
 
-a {
-    outline: 0 !important;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.column {
-    background-color: gray;
-    float: left;
-    width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-.column-r {
-    background-color: grey;
-    float: right;
-    width: 45%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-h2 {
-    font-size: 35px;
+.modal-title {
     color: #f9760b;
-    text-align: center;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    font-size: 25px;
-}
-
-td {
-    font-size: 20px;
-}
-
-input[type=text] {
-    width: auto;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-input[type=tel] {
-    width: auto;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-textarea {
-    width: auto;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-label {
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.purchase {
+.text-orange {
     color: #f9760b;
-    margin: 5px;
-    background-color: white;
-    text-decoration: none;
 }

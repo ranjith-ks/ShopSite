@@ -5,117 +5,424 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="shop.css">
     <title>Shop Now</title>
 </head>
 
 <body>
-    <div class="top">
-        <div class="logo">&#127968;Stone2Wall.com</div>
-        <p>
-            <a href="login.html" class="back">Login</a>
-        </p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <div class="nav-cont">&#127968;Stone2Wall.com</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="dropdown nav-item"><a class="dropdown-toggle nav-cont nav-link" data-toggle="dropdown" href="#">Building Material<span class="caret"> </span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#cement">Cement</a></li>
+                        <li><a href="#tmt">TMT Steel Bars</a></li>
+                        <li><a href="#coaagg">Coarse Aggregate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item"><a class="dropdown-toggle nav-cont nav-link" data-toggle="dropdown" href="#">Plumbing<span class="caret"></span> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#wtank">Water Tank</a></li>
+                        <li><a href="#pipefit">Pipe Fittings</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item"><a class="dropdown-toggle nav-link nav-cont" data-toggle="dropdown" href="#">Electricals<span class="caret"> </span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#wire">Wires</a></li>
+                        <li><a href="#mcb">MCB</a></li>
+                        <li><a href="#efit">Electrical Fittings</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link nav-cont" href="" data-toggle="modal" data-target="#loginmodal"><i class="fa fa-user" aria-hidden="true"></i> Login/SignUp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-cont" href="" data-toggle="modal" data-target="#cartmodal"><button type="button" class="btn btn-sm btn-outline-warning"><i class="fa fa-shopping-cart" aria-hidden="true"></i>My Cart</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-cont" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="text-orange">Building Materials</h3>
+                <a href="#cement"><img src="https://brick2wall.com/assets/images/4.jpg" alt="Cement" class="img-thumbnail"></a>
+                <a href="#tmt"> <img src="https://brick2wall.com/assets/images/7.jpg" alt="TMT Rod" class="img-thumbnail"></a>
+                <a href="#coaagg"> <img src="https://brick2wall.com/assets/images/coase-agg1.jpg" alt="Coarse" class="img-thumbnail"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="text-orange">Plumbing</h3>
+                <a href="#pipefit"> <img src="https://brick2wall.com/assets/images/16.png" alt="Fittings" class="img-thumbnail"></a>
+                <a href="#wtank"><img src="https://brick2wall.com/assets/images/17.png" alt="Tank" class="img-thumbnail"></a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="text-orange ">Electricals</h3>
+                <a href="#wire"><img src="https://brick2wall.com/assets/images/13.png" alt="Wires" class="img-thumbnail"></a>
+                <a href="#mcb"><img src="https://brick2wall.com/assets/images/14.png" alt="MCB" class="img-thumbnail"></a>
+                <a href="#efit"><img src="https://brick2wall.com/assets/images/15.png" alt="EFits" class="img-thumbnail"></a>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-        <div class="column">
-            <h2>List of Items</h2>
-            <table>
-                <tr>
-                    <th>Product Id</th>
-                    <th>Product Name</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                </tr>
-                <tr>
-                    <td>P01</td>
-                    <td>Asian Paint</td>
-                    <td>2000</td>
-                    <td rowspan="2">Paint</td>
-                </tr>
-                <tr>
-                    <td>P02</td>
-                    <td>Nippon Paint</td>
-                    <td>2500</td>
-                </tr>
+    <!-- Cements -->
+    <div class="container-fluid" id="cement">
+        <h1 class="text-orange">Cements</h1>
+        <div class="row">
+            <div class="col">
 
-                <tr>
-                    <td>S01</td>
-                    <td>Tata Steel</td>
-                    <td>1000</td>
-                    <td rowspan="2">TMT Rods</td>
-                </tr>
-                <tr>
-                    <td>S02</td>
-                    <td>Agni Steel</td>
-                    <td>2500</td>
-                </tr>
-
-                <tr>
-                    <td>B01</td>
-                    <td>Birla Bricks</td>
-                    <td>500</td>
-                    <td rowspan="2">Bricks</td>
-                </tr>
-                <tr>
-                    <td>B02</td>
-                    <td>BT Bricks</td>
-                    <td>250</td>
-                </tr>
-
-                <tr>
-                    <td>C01</td>
-                    <td>India Cements</td>
-                    <td>2500</td>
-                    <td rowspan="2">Cement</td>
-                </tr>
-                <tr>
-                    <td>C02</td>
-                    <td>UltraTech</td>
-                    <td>3500</td>
-                </tr>
-
-                <tr>
-                    <td>F01</td>
-                    <td>Jaguar Pipes</td>
-                    <td>2500</td>
-                    <td rowspan="2">Pipe Fittings</td>
-                </tr>
-                <tr>
-                    <td>F02</td>
-                    <td>Apollo Pipes</td>
-                    <td>3500</td>
-                </tr>
-            </table>
+                <figure class="figure border">
+                    <h6>Bangur PPC Cement</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Bangur-PPC-Cement.jpg" alt="SROn" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.356</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Shree Jung PPC Cement</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Shree-Jung-rodhak-PPC-Cement.jpg" alt="SJCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.326</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>JK Super PPC Cement</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/JK-Super-PPC-Cement.jpg" alt="JKCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.346</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Wonder PPC Cement</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Wonder-PPC-Cement.jpg" alt="WonderCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.326</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="column-r">
-            <h2>Purchase Products</h2>
-            <form action="" method="get">
-                <label for="fname">Full Name</label><br>
-                <input type="text" name="fname" id="fname" required><br>
-                <label for="mno">Mobile Number</label><br>
-                <input type="tel" name="mno" id="mno" pattern="[6789][0-9]{9}" required><br>
-                <label for="address">Full Address</label><br>
-                <textarea name="address" id="adrs" cols="30" rows="5" required></textarea><br>
-                <label for="products">Select Products required:(Press Ctrl or Cmd key for selecting multiple options)</label><br>
-                <select name="products" id="products" size="5" multiple>
-                    <option value="paint">Paint</option>
-                    <option value="paint">TMT Rods</option>
-                    <option value="paint">Bricks</option>
-                    <option value="paint">Cements</option>
-                    <option value="paint">Pipe Fittings</option>
-                </select><br>
-                <label for="pids">Enter the Product IDs</label>
-                <input type="text" name="pids" id="pids"><br>
-                <label for="modp">Mode of Payment</label>
-                <input type="radio" name="modp" id="modp" value="cod"> COD
-                <input type="radio" name="modp" id="modp" value="online"> Online
-                <button type="submit"><a href="#">
-                    <div class="purchase">Purchase</div>
-                </a>
-            </button>
+    </div>
 
-            </form>
+    <!-- TMT Steel Bars -->
+    <div class="container-fluid" id="tmt">
+        <h1 class="text-orange">TMT Steel Bars</h1>
+        <div class="row">
+            <div class="col">
+
+                <figure class="figure border">
+                    <h6>Binding Wire</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Binding-Wire.jpg" alt="BWire" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.80</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Rathi TMT Steel Bars</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Rathi-TMT-Steel-Bars-Fe-500.jpg" alt="SJCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.2999</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Kamdhenu TMT Fe 500 Bars</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Kamdhenu-TMT-Steel-Bars-Fe-500.jpg" alt="JKCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.3103</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Water Tank -->
+    <div class="container-fluid" id="cement">
+        <h1 class="text-orange">Water Tanks</h1>
+        <div class="row">
+            <div class="col">
+
+                <figure class="figure border">
+                    <h6>Sintex Neo Water Tank</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Sintex-Neo-Water-Tank-Double-Layered.jpg" alt="SROn" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.3250</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Sheetal Royal Water Tank</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Sheetal-King-Premium-Water-Tank-4-Layered.jpg" alt="SJCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.3700</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Sheetal Water Tank</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Sheetal-Virat-Water-Tank-Triple-Layered.jpg" alt="JKCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.3650</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="figure border">
+                    <h6>Vecus Silk Water Tank</h6>
+                    <a href="" data-toggle="modal" data-target="#addmodal"> <img src="https://brick2wallmediastatic.s3.amazonaws.com/media/product/large/Vectus-Silk-Water-Tank-Triple-Layered.jpg" alt="WonderCement" class="img-thumbnail"></a>
+                    <figcaption class="figcaption">Rs.2900</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center">
+        <h6><i class="fa fa-copyright" aria-hidden="true">Stone2Wall.com</i></h6>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content bg-dark">
+                <div class="modal-header row">
+                    <div class="col text-center">
+                        <h4 class="modal-title">Sign Up</h4>
+                    </div>
+
+                    <div class="col text-center">
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                </div>
+
+                <div class="modal-body row text-white">
+
+                    <!-- SignUp -->
+                    <div class="col">
+                        <form action="#" method="post">
+                            <h6>Create Account</h6>
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" name="name" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">EMail*</label>
+                                <input type="email" name="mail" id="mail" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile*</label>
+                                <input type="tel" name="mobile" id="mobile" class="form-control" pattern="[6789][0-9]{9}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password*</label>
+                                <input type="password" name="pwd" id="pwd" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            </div>
+                            <input type="checkbox" name="remember" required> I have agree to the Terms and Conditions.
+
+                            <button type="submit" class="btn btn-outline-primary">Create Account</button>
+                        </form>
+                    </div>
+
+                    <!-- Login -->
+                    <div class="col">
+                        <form action="#" method="POST">
+                            <h6>Already Have An Account</h6>
+                            <div class="form-group">
+                                <label for="mail">EMail*</label>
+                                <input type="email" name="mail" id="mail" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password*</label>
+                                <input type="password" name="pwd" id="pwd" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            </div>
+                            <a href="#"><i>Forgot Password?</i></a>
+                            <br>
+                            <button type="submit" class="btn btn-outline-success">Login</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default text-orange" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content ">
+                <div class="modal-header d-block text-center">
+                    <h4 class="modal-title ">Your Items</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="table-responsive table-hover table-stripped">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price(Rs.)</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>TMTf01</td>
+                                    <td>TMT Steel</td>
+                                    <td>50 kg</td>
+                                    <td>1150</td>
+                                    <td><i class="fa fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jagp01</td>
+                                    <td>Jaguar Pipe</td>
+                                    <td>3 nos</td>
+                                    <td>1250</td>
+                                    <td><i class="fa fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>ICo01</td>
+                                    <td>India Cements</td>
+                                    <td>100 kg</td>
+                                    <td>3150</td>
+                                    <td><i class="fa fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Total</td>
+                                    <td>5550</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ordermodal">Proceed</button>
+                    <button type="button" class="btn btn-default text-orange" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="ordermodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content ">
+                <div class="modal-header d-block text-center">
+                    <h4 class="modal-title ">Place Your Order</h4>
+                </div>
+
+                <div class="modal-body row">
+                    <div class="col">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" name="name" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile*</label>
+                                <input type="tel" name="mobile" id="mobile" class="form-control" pattern="[6789][0-9]{9}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address*</label><br>
+                                <textarea name="address" id="address" cols="30" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="Payment">Payment : </label>
+                                <span class="radio">
+                                    <label><input type="radio" name="optradio" checked>G Pay </label>
+                                </span>
+                                <span class="radio">
+                                    <label><input type="radio" name="optradio">COD</label>
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Enter Password to Complete</label>
+                                <input type="password" name="pwd" id="pwd" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Place</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="addmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content ">
+                <div class="modal-header d-block text-center">
+                    <h4 class="modal-title ">Add To Cart</h4>
+                </div>
+
+                <div class="modal-body row">
+                    <div class="col">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="pid">Product Id</label>
+                                <input type="text" name="pid" id="pid" class="form-control" readonly value="TMTf01">
+                            </div>
+                            <div class="form-group">
+                                <label for="pname">Product Name</label>
+                                <input type="text" name="pname" id="pname" class="form-control" value="Rathi TMT Steel" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="quant">Quantity (kg)</label><br>
+                                <input type="number" name="quant" id="quant" class="form-control" min="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quant">Price per kg</label><br>
+                                <input type="number" name="price" id="price" class="form-control" value="2999" readonly>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">ADD</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
